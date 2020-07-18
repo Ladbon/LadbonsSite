@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PortfolioProject';
+  acceleratevideo = false;
 
   scrollTopTop() {
     document.body.scrollTop = 0;
