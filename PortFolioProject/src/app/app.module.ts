@@ -1,20 +1,16 @@
-// This is meant only as a reference, you can copy the icons you want in a similar manner
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResumeComponent } from './components/resume/resume.component';
 
 import { FontAwesomeModule, FaIconLibrary  } from '@fortawesome/angular-fontawesome';
 import { fab, faGithub, faCodepen, faLinkedin, faHtml5, faCss3Alt, faJsSquare, faReact, faAngular, faCuttlefish } from 'C:/Users/ladbo/Desktop/coding_projects/AngularPWA/PortFolioProject/node_modules/@fortawesome/free-brands-svg-icons';
-import { faCoffee, fas, faCircle, faAt, faTrophy, faCertificate, faBars } from '@fortawesome/free-solid-svg-icons';
+import { fas, faCircle, faAt, faTrophy, faCertificate, faBars } from '@fortawesome/free-solid-svg-icons';
 import { faGem } from '@fortawesome/free-regular-svg-icons';
 
 const appRoutes: Routes = [
@@ -29,8 +25,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      appRoutes
     ),
     BrowserModule,
     FontAwesomeModule,
