@@ -1,404 +1,479 @@
-                                            section {
-                                                min-height: 100vh;
-                                                height: auto;
-                                                position: relative;
-                                                font-family: 'Segoe UI', sans-serif;
-                                            }
-                                            
-                                            a {
-                                                text-decoration: none;
-                                                color: rgba(255, 255, 255, 0.87);
-                                            }
-                                            /*-- Home Section ---------------------------------- */
-                                            
-                                            #home {
-                                                background-color: black;
-                                                display: flex;
-                                                flex-wrap: nowrap;
-                                                align-items: center;
-                                                justify-content: center;
-                                            }
-                                            /* Video Background */
-                                            
-                                            #video-background {
-                                                position: fixed;
-                                                right: 0;
-                                                bottom: 0;
-                                                width: 100vw;
-                                                height: auto;
-                                            }
-                                            
-                                            .introvideo {
-                                                position: absolute;
-                                                top: 50%;
-                                                left: 50%;
-                                                transform: translate(-50%, -50%);
-                                            }
-                                            
-                                            .video-overlay {
-                                                position: fixed;
-                                                left: 0;
-                                                top: 0;
-                                                height: 100vh;
-                                                width: 100vw;
-                                                background-color: rgba(18, 18, 18, .4);
-                                            }
-                                            /* Main Title */
-                                            
-                                            @font-face {
-                                                font-family: Delius;
-                                                src: url(../assets/font/Delius.ttf);
-                                                font-display: swap;
-                                            }
-                                            
-                                            .main-title {
-                                                position: absolute;
-                                                top: 20%;
-                                                color: rgba(255, 255, 255, 0.87);
-                                                font-family: Delius, sans-serif;
-                                                text-shadow: 1px 1px 1px #ffffff;
-                                                font-size: 5rem;
-                                            }
-                                            /* Social Icons */
-                                            
-                                            .social-icons {
-                                                position: absolute;
-                                                top: 40%;
-                                                margin-left: 5px;
-                                                border-radius: 5px;
-                                            }
-                                            
-                                            .social-icons fa-icon {
-                                                font-size: 3rem;
-                                                color: #ffffff;
-                                                opacity: 0.87;
-                                                padding: 7.5px 15px;
-                                                cursor: pointer;
-                                            }
-                                            
-                                            .social-icons fa-icon:hover {
-                                                color: #202020;
-                                                background-color: #ffffff;
-                                                border-radius: 5px;
-                                            }
-                                            /* -- About Section --------------------------------- */
-                                            
-                                            .background {
-                                                position: relative;
-                                                min-height: 100vh;
-                                                height: auto;
-                                                background-color: rgba(12, 12, 12);
-                                            }
-                                            
-                                            .card {
-                                                position: relative;
-                                                top: 5vh;
-                                                height: auto;
-                                                width: 40vw;
-                                                margin: 0 auto;
-                                                padding: 3rem 1.5rem;
-                                                display: flex;
-                                                flex-direction: column;
-                                                border-radius: 5px;
-                                                background-color: rgba(50, 50, 50, .5);
-                                            }
-                                            
-                                            .about-img {
-                                                height: 35vh;
-                                                margin: 0 auto;
-                                                border-radius: 50%;
-                                                box-shadow: 2px 5px 10px 4px rgba(0, 0, 0, .25);
-                                            }
-                                            
-                                            .card-body {
-                                                padding: 0 1.2rem;
-                                            }
-                                            
-                                            .card-title {
-                                                text-align: center;
-                                                font-weight: 500;
-                                                font-size: 2.5rem;
-                                                width: 100%;
-                                                padding-bottom: 25px;
-                                                border-bottom: 1px solid #BB86FC;
-                                                color: rgba(255, 255, 255, 0.87);
-                                            }
-                                            
-                                            .card-text {
-                                                font-size: 1.3rem;
-                                                margin-top: 0;
-                                                text-align: justify;
-                                                color: rgba(255, 255, 255, 0.87);
-                                            }
-                                            
-                                            .card-button {
-                                                color: rgba(0, 0, 0, 0.87);
-                                                text-align: center;
-                                                font-size: 20px;
-                                                font-weight: bold;
-                                                background: rgba(187, 134, 252, 1);
-                                                padding: .5rem;
-                                                margin-top: 3vh;
-                                                border-radius: 5px;
-                                                box-shadow: 0 0.15rem rgba(187, 134, 252, .65);
-                                            }
-                                            
-                                            .card-button:active {
-                                                transform: translate(0, 0.3rem);
-                                                background: rgba(187, 134, 252, .9);
-                                            }
-                                            /* -- Projects Section ------------------------------ */
-                                            
-                                            #projects {
-                                                background-color: rgba(0, 0, 0, 1);
-                                            }
-                                            
-                                            .projects {
-                                                display: flex;
-                                                flex-wrap: wrap;
-                                                justify-content: center;
-                                                margin: 0 10%;
-                                            }
-                                            
-                                            .projects-title {
-                                                color: rgba(255, 255, 255, 0.87);
-                                                font-size: 2.5rem;
-                                                font-weight: 500;
-                                                width: 100%;
-                                                text-align: center;
-                                                margin: 5vh;
-                                            }
-                                            
-                                            .project-group-1 {
-                                                display: flex;
-                                                flex-wrap: wrap;
-                                                justify-content: center;
-                                            }
-                                            
-                                            .project-group-2 {
-                                                display: flex;
-                                                flex-wrap: wrap;
-                                                justify-content: center;
-                                                margin-bottom: 10vh;
-                                            }
-                                            
-                                            .project-img img {
-                                                width: 270px;
-                                                height: 140px;
-                                                border-radius: 15px;
-                                                border-color: rgb(51, 51, 51);
-                                                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-                                                transition: all 0.3s ease-in-out;
-                                                background-color: rgba(12, 12, 12, 1);
-                                            }
-                                            
-                                            .project-img video {
-                                                width: 268px;
-                                                height: 138px;
-                                                object-fit: cover;
-                                                border-radius: 15px;
-                                                border-color: rgb(51, 51, 51);
-                                                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-                                                transition: all 0.3s ease-in-out;
-                                                background-color: rgba(12, 12, 12, 1);
-                                            }
-                                            
-                                            #project-video {
-                                                display: none;
-                                            }
-                                            
-                                            .project-image:hover #project-video {
-                                                position: fixed;
-                                                display: flex;
-                                                flex-wrap: wrap;
-                                                top: 44%;
-                                                left: 50%;
-                                                transform: translate(-50%, -50%);
-                                            }
-                                            
-                                            .project-img:hover {
-                                                transform: scale(0.97);
-                                                transition: all 0.3s ease-in-out;
-                                            }
-                                            
-                                            .project-img {
-                                                width: 360px;
-                                                height: 160px;
-                                            }
-                                            
-                                            .project-item {
-                                                text-align: center;
-                                            }
-                                            
-                                            .project-title {
-                                                font-size: 1.4rem;
-                                                font-weight: 500;
-                                                margin: 0 auto;
-                                            }
-                                            
-                                            .project-title a:hover {
-                                                color: rgba(187, 134, 252, .9);
-                                                transition: all 0.3s ease-in-out;
-                                            }
-                                            
-                                            .project-link {
-                                                font-size: 1.1rem;
-                                                font-weight: 500;
-                                                margin-top: 1vh;
-                                            }
-                                            
-                                            .project-link a:hover {
-                                                color: rgba(187, 134, 252, .9);
-                                                transition: all 0.3s ease-in-out;
-                                            }
-                                            /* -- Contact Section ------------------------------- */
-                                            
-                                            #contact {
-                                                background-color: rgba(12, 12, 12);
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                text-align: center;
-                                            }
-                                            
-                                            .business-card {
-                                                max-width: 100%;
-                                                height: auto;
-                                            }
-                                            /* -- Footer Section -------------------------------- */
-                                            
-                                            #footer {
-                                                background-color: rgba(0, 0, 0);
-                                                min-height: unset;
-                                                height: 150px;
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                text-align: center;
-                                            }
-                                            
-                                            .footer-icons fa-icon {
-                                                font-size: 2rem;
-                                                margin-left: 15px;
-                                            }
-                                            
-                                            .footer-icons fa-icon:hover {
-                                                color: rgba(187, 134, 252, .9);
-                                            }
-                                            
-                                            .footer-text {
-                                                color: rgba(255, 255, 255, .87);
-                                                text-align: center;
-                                                padding-top: 15px;
-                                            }
-                                            /* ----------------------------------- Media Queries -------------------------*/
-                                            /* ----------------------------------- Large Smartphone (vertical) -------------------------*/
-                                            
-                                            @media screen and (max-width: 600px) {
-                                                video {
-                                                    object-fit: cover;
-                                                }
-                                                #video-background {
-                                                    position: absolute;
-                                                    height: 100vh;
-                                                    width: 100vw;
-                                                }
-                                                .main-title {
-                                                    font-size: 3.5rem;
-                                                    top: 25%;
-                                                }
-                                                .social-icons fa-icon {
-                                                    font-size: 2rem;
-                                                }
-                                                .card {
-                                                    width: 100vw;
-                                                }
-                                                .card-text {
-                                                    font-size: 1rem;
-                                                }
-                                                .projects-title {
-                                                    font-size: 2rem;
-                                                    padding-top: 50px;
-                                                }
-                                            }
-                                            /* ----------------------------------- Large Smartphone (Horizontal) -------------------------*/
-                                            
-                                            @media screen and (max-width: 850px) and (max-height: 500px) {
-                                                .main-title {
-                                                    top: 10%;
-                                                    margin-left: 6px;
-                                                    font-size: 3.5rem;
-                                                }
-                                                .card {
-                                                    top: 0;
-                                                    width: 80%;
-                                                }
-                                                .card-text {
-                                                    font-size: 1rem;
-                                                }
-                                                .about-img {
-                                                    height: 50vh;
-                                                }
-                                                .projects {
-                                                    margin: 0 2%;
-                                                }
-                                                .project-img img {
-                                                    width: 240px;
-                                                    height: 120px;
-                                                }
-                                                .project-img {
-                                                    width: 260px;
-                                                    height: 140px;
-                                                }
-                                                .project-title {
-                                                    font-size: 1rem;
-                                                }
-                                                .project-link {
-                                                    font-size: 1rem;
-                                                }
-                                                .business-card {
-                                                    max-width: 50%;
-                                                }
-                                            }
-                                            /* iPhone X - Horizontal*/
-                                            
-                                            @media screen and (max-width: 724px) and (max-height: 376px) {}
-                                            /* iPhone X */
-                                            
-                                            @media screen and (max-width: 376px) {}
-                                            /* iPhone 6/7/8 */
-                                            
-                                            @media screen and (max-width: 376px) and (max-height: 668px) {}
-                                            /* iPhone 6/7/8 - Horizontal */
-                                            
-                                            @media screen and (max-width: 668px) and (max-height: 376px) {}
-                                            /* Monitor - No Bookmarks Bar */
-                                            
-                                            @media screen and (min-width: 1800px) and (min-height: 938px) {}
-                                            /* Monitor - Fullscreen */
-                                            
-                                            @media screen and (min-width: 1800px) and (min-height: 1000px) {}
-                                            /* Laptop - Bookmarks Bar */
-                                            
-                                            @media screen and (max-width: 1800px) {}
-                                            /* Laptop - No Bookmarks Bar */
-                                            
-                                            @media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 760px) {}
-                                            /* Laptop - Fullscreen */
-                                            
-                                            @media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 800px) {}
-                                            /* Laptop - 1366 x 768 - Bookmarks Bar */
-                                            
-                                            @media screen and (width: 1366px) {}
-                                            /* Laptop - 1366 x 768 - No Bookmarks Bar */
-                                            
-                                            @media screen and (width: 1366px) and (min-height: 720px) {}
-                                            /* Laptop - 1366 x 768 - Fullscreen */
-                                            
-                                            @media screen and (width: 1366px) and (min-height: 759px) {}
-                                            /* iPad - Horizontal */
-                                            
-                                            @media screen and (min-width: 900px) and (max-width: 1025px) {}
-                                            /* iPad */
-                                            
-                                            @media screen and (max-width: 769px) {}
+            section {
+                min-height: 100vh;
+                height: auto;
+                position: relative;
+                font-family: 'Segoe UI', sans-serif;
+            }
+            
+            a {
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.87);
+            }
+            /*-- Home Section ---------------------------------- */
+            
+            #home {
+                background-color: black;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+            }
+            /* Video Background */
+            
+            #video-background {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                width: 100vw;
+                height: auto;
+            }
+            
+            .introvideo {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .video-overlay {
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                width: 100vw;
+                background-color: rgba(18, 18, 18, .4);
+            }
+            /* Main Title */
+            
+            @font-face {
+                font-family: Delius;
+                src: url(../assets/font/Delius.ttf);
+                font-display: swap;
+            }
+            
+            .main-title {
+                position: absolute;
+                top: 20%;
+                color: rgba(255, 255, 255, 0.87);
+                font-family: Delius, sans-serif;
+                text-shadow: 1px 1px 1px #ffffff;
+                font-size: 5rem;
+            }
+            /* Social Icons */
+            
+            .social-icons {
+                position: absolute;
+                top: 40%;
+                margin-left: 5px;
+                border-radius: 5px;
+            }
+            
+            .social-icons fa-icon {
+                font-size: 3rem;
+                color: #ffffff;
+                opacity: 0.87;
+                padding: 7.5px 15px;
+                cursor: pointer;
+            }
+            
+            .social-icons fa-icon:hover {
+                color: #202020;
+                background-color: #ffffff;
+                border-radius: 5px;
+            }
+            /* -- About Section --------------------------------- */
+            
+            .background {
+                position: relative;
+                min-height: 100vh;
+                height: auto;
+                background-color: rgba(12, 12, 12);
+            }
+            
+            .card {
+                position: relative;
+                top: 5vh;
+                height: auto;
+                width: 40vw;
+                margin: 0 auto;
+                padding: 3rem 1.5rem;
+                display: flex;
+                flex-direction: column;
+                border-radius: 5px;
+                background-color: rgba(50, 50, 50, .5);
+            }
+            
+            .about-img {
+                height: 35vh;
+                margin: 0 auto;
+                border-radius: 50%;
+                box-shadow: 2px 5px 10px 4px rgba(0, 0, 0, .25);
+            }
+            
+            .card-body {
+                padding: 0 1.2rem;
+            }
+            
+            .card-title {
+                text-align: center;
+                font-weight: 500;
+                font-size: 2.5rem;
+                width: 100%;
+                padding-bottom: 25px;
+                border-bottom: 1px solid #BB86FC;
+                color: rgba(255, 255, 255, 0.87);
+            }
+            
+            .card-text {
+                font-size: 1.3rem;
+                margin-top: 0;
+                text-align: justify;
+                color: rgba(255, 255, 255, 0.87);
+            }
+            
+            .card-button {
+                color: rgba(0, 0, 0, 0.87);
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                background: rgba(187, 134, 252, 1);
+                padding: .5rem;
+                margin-top: 3vh;
+                border-radius: 5px;
+                box-shadow: 0 0.15rem rgba(187, 134, 252, .65);
+            }
+            
+            .card-button:active {
+                transform: translate(0, 0.3rem);
+                background: rgba(187, 134, 252, .9);
+            }
+            /* -- Projects Section ------------------------------ */
+            
+            #projects {
+                background-color: rgba(0, 0, 0, 1);
+            }
+            
+            .projects {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 0 10%;
+            }
+            
+            .projects-title {
+                color: rgba(255, 255, 255, 0.87);
+                font-size: 2.5rem;
+                font-weight: 500;
+                width: 100%;
+                text-align: center;
+                margin: 5vh;
+            }
+            
+            .project-group-1 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .project-group-2 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 10vh;
+            }
+            
+            .project-img img {
+                width: 270px;
+                height: 140px;
+                border-radius: 15px;
+                border-color: rgb(51, 51, 51);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                transition: all 0.3s ease-in-out;
+                background-color: rgba(12, 12, 12, 1);
+            }
+            
+            .project-img video {
+                width: 268px;
+                height: 138px;
+                object-fit: cover;
+                border-radius: 15px;
+                border-color: rgb(51, 51, 51);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                transition: all 0.3s ease-in-out;
+                background-color: rgba(12, 12, 12, 1);
+            }
+            
+            #project-video {
+                display: none;
+            }
+            
+            .project-image:hover #project-video {
+                position: fixed;
+                display: flex;
+                flex-wrap: wrap;
+                top: 44%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .project-img:hover {
+                transform: scale(0.97);
+                transition: all 0.3s ease-in-out;
+            }
+            
+            .project-img {
+                width: 360px;
+                height: 160px;
+            }
+            
+            .project-item {
+                text-align: center;
+            }
+            
+            .project-title {
+                font-size: 1.4rem;
+                font-weight: 500;
+                margin: 0 auto;
+            }
+            
+            .project-title a:hover {
+                color: rgba(187, 134, 252, .9);
+                transition: all 0.3s ease-in-out;
+            }
+            
+            .project-link {
+                font-size: 1.1rem;
+                font-weight: 500;
+                margin-top: 1vh;
+            }
+            
+            .project-link a:hover {
+                color: rgba(187, 134, 252, .9);
+                transition: all 0.3s ease-in-out;
+            }
+            /* -- Contact Section ------------------------------- */
+            
+            #contact {
+                background-color: rgba(12, 12, 12);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .business-card {
+                max-width: 100%;
+                height: auto;
+            }
+            /* -- Footer Section -------------------------------- */
+            
+            #footer {
+                background-color: rgba(0, 0, 0);
+                min-height: unset;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .footer-icons fa-icon {
+                font-size: 2rem;
+                margin-left: 15px;
+            }
+            
+            .footer-icons fa-icon:hover {
+                color: rgba(187, 134, 252, .9);
+            }
+            
+            .footer-text {
+                color: rgba(255, 255, 255, .87);
+                text-align: center;
+                padding-top: 15px;
+            }
+            /* ----------------------------------- Media Queries -------------------------*/
+            /* ----------------------------------- Large Smartphone (vertical) -------------------------*/
+            
+            @media screen and (max-width: 600px) {
+                video {
+                    object-fit: cover;
+                }
+                #video-background {
+                    position: absolute;
+                    height: 100vh;
+                    width: 100vw;
+                }
+                .main-title {
+                    font-size: 3.5rem;
+                    top: 20%;
+                }
+                .social-icons fa-icon {
+                    font-size: 2rem;
+                }
+                .card {
+                    width: 100vw;
+                }
+                .card-text {
+                    font-size: 1rem;
+                }
+                .projects-title {
+                    font-size: 2rem;
+                    padding-top: 50px;
+                }
+                .business-card {
+                    max-width: auto;
+                }
+            }
+            /* ----------------------------------- Large Smartphone (Horizontal) -------------------------*/
+            
+            @media screen and (max-width: 850px) and (max-height: 500px) {
+                .main-title {
+                    top: 20%;
+                    margin-left: 6px;
+                    font-size: 3.5rem;
+                }
+                .card {
+                    top: 0;
+                    width: 80%;
+                }
+                .card-text {
+                    font-size: 1rem;
+                }
+                .about-img {
+                    height: 50vh;
+                }
+                .projects {
+                    margin: 0 2%;
+                }
+                .project-img img {
+                    width: 240px;
+                    height: 120px;
+                }
+                .project-img {
+                    width: 260px;
+                    height: 140px;
+                }
+                .project-title {
+                    font-size: 1rem;
+                }
+                .project-link {
+                    font-size: 1rem;
+                }
+                .business-card {
+                    max-width: auto;
+                }
+            }
+            /* iPhone X - Horizontal*/
+            
+            @media screen and (max-width: 724px) and (max-height: 376px) {}
+            /* iPhone X */
+            
+            @media screen and (max-width: 376px) {}
+            /* iPhone 6/7/8 */
+            
+            @media screen and (max-width: 376px) and (max-height: 668px) {}
+            /* iPhone 6/7/8 - Horizontal */
+            
+            @media screen and (max-width: 668px) and (max-height: 376px) {}
+            /* Monitor - No Bookmarks Bar */
+            
+            @media screen and (min-width: 1800px) and (min-height: 938px) {}
+            /* Monitor - Fullscreen */
+            
+            @media screen and (min-width: 1800px) and (min-height: 1000px) {}
+            /* Laptop - Bookmarks Bar */
+            
+            @media screen and (max-width: 1800px) {}
+            /* Laptop - No Bookmarks Bar */
+            
+            @media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 760px) {}
+            /* Laptop - Fullscreen */
+            
+            @media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 800px) {}
+            /* Laptop - 1366 x 768 - Bookmarks Bar */
+            
+            @media screen and (width: 1366px) {}
+            /* Laptop - 1366 x 768 - No Bookmarks Bar */
+            
+            @media screen and (width: 1366px) and (min-height: 720px) {}
+            /* Laptop - 1366 x 768 - Fullscreen */
+            
+            @media screen and (width: 1366px) and (min-height: 759px) {}
+            /* iPad - Horizontal */
+            
+            @media screen and (min-width: 900px) and (max-width: 1025px) {
+                .main-title {
+                    top: 20%;
+                    margin-left: 6px;
+                    font-size: 3.5rem;
+                }
+                .card {
+                    top: 0;
+                    width: 80%;
+                }
+                .card-text {
+                    font-size: 1rem;
+                }
+                .about-img {
+                    height: 50vh;
+                }
+                .projects {
+                    margin: 0 2%;
+                }
+                .project-img img {
+                    width: 240px;
+                    height: 120px;
+                }
+                .project-img {
+                    width: 260px;
+                    height: 140px;
+                }
+                .project-title {
+                    font-size: 1rem;
+                }
+                .project-link {
+                    font-size: 1rem;
+                }
+                .business-card {
+                    max-width: auto;
+                }
+            }
+            /* iPad */
+            
+            @media screen and (max-width: 899px) {
+                .main-title {
+                    top: 20%;
+                    margin-left: 6px;
+                    font-size: 3.5rem;
+                }
+                .card {
+                    top: 0;
+                    width: 80%;
+                }
+                .card-text {
+                    font-size: 1rem;
+                }
+                .about-img {
+                    height: 25vh;
+                }
+                .projects {
+                    margin: 0 2%;
+                }
+                .project-img img {
+                    width: 240px;
+                    height: 120px;
+                }
+                .project-img {
+                    width: 260px;
+                    height: 140px;
+                }
+                .project-title {
+                    font-size: 1rem;
+                }
+                .project-link {
+                    font-size: 1rem;
+                }
+                .business-card {
+                    max-width: auto;
+                }
+            }

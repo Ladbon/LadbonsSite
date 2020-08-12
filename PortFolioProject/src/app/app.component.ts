@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'PortfolioProject';
   acceleratevideo = false;
 
+ 
   scrollTopTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
