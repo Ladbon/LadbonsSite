@@ -7,9 +7,10 @@
     <section id="home">
 
         <!-- Video Background -->
-        <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="introvideo" id="video-background">
-            <source src="../assets/img/birdsgameplay.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <video [muted]="true" [autoplay]="true" loop class="introvideo" id="video-background">
+            <source src="../assets/img/birdsgameplay.mp4" type='video/mp4'>
             </video>
+
         <div class="video-overlay"></div>
 
         <!-- Main Title -->
@@ -72,9 +73,8 @@
                 <article class="project-item">
                     <div class="project-img">
                         <div class="project-image">
-                            <a href="https://github.com/Ladbon/LonelyRoad" target="_blank" rel="noopener" aria-label="Github" class=""> <img src="../assets/img/lonelyroad.png" onmouseout="this.src='../assets/img/lonelyroad.png'" border="1
-           " alt="" />
-                                <video id="project-video" preload="auto" autoplay loop muted>
+                            <a href="https://github.com/Ladbon/LonelyRoad" target="_blank" rel="noopener" aria-label="Github" class=""> <img src="../assets/img/lonelyroad.png" onmouseout="this.src='../assets/img/ lonelyroad.png'" border="1 " alt="" />
+                                <video id="project-video" preload="auto" [muted]="true" autoplay="autoplay" loop>
                                     <source src="https://giant.gfycat.com/LiquidSpitefulKronosaurus.webm" type="video/webm"/></video>
                             </a>
                         </div>
@@ -94,7 +94,7 @@
 
                                 <img id="project-image" src="../assets/img/accelerate2.png" onmouseout="this.src='../assets/img/accelerate2.png'" border="1px solid black" alt="" />
 
-                                <video id="project-video" autoplay loop muted>
+                                <video id="project-video" [muted]="true" autoplay="autoplay" loop>
                                     <source src="../assets/img/accelerategameplay.webm" type="video/webm"/></video>
                             </a>
                         </div>
@@ -112,7 +112,7 @@
                         <div class="project-image">
                             <a href="https://youtu.be/fUXpZmgM8C0" target="_blank" rel="noopener" aria-label="youtube" class=""> <img src="../assets/img/naar.jpg" onmouseout="this.src='../assets/img/naar.jpg'" border="1" alt="" />
 
-                                <video id="project-video" preload="auto" autoplay loop muted>
+                                <video id="project-video" preload="auto" [muted]="true" autoplay="autoplay" loop>
                                     <source src="https://i.imgur.com/HCJicQQ.mp4" type="video/mp4"/></video>
                             </a>
                         </div>
@@ -132,7 +132,7 @@
                         <div class="project-image">
                             <a href="http://9leap.net/games/3646" target="_blank" rel="noopener" aria-label="9leap" class=""> <img src="../assets/img/redemptionwars.png" onmouseout="this.src='../assets/img/redemptionwars.png'" border="1" alt="" />
 
-                                <video id="project-video" preload="auto" autoplay loop muted>
+                                <video id="project-video" preload="auto" [muted]="true" autoplay="autoplay" loop>
                                     <source src="https://giant.gfycat.com/BreakableGrandioseBluebird.webm" type="video/webm"/></video>
                             </a>
                         </div>
@@ -153,7 +153,7 @@
                         <div class="project-image">
                             <a href="https://github.com/Ladbon/ATowerDefenseGame" target="_blank" rel="noopener" aria-label="Github" class=""> <img src="../assets/img/Legion.png" onmouseout="this.src='../assets/img/Legion.png'" border="1" alt="" />
 
-                                <video id="project-video" preload="auto" autoplay loop muted>
+                                <video id="project-video" preload="auto" [muted]="true" autoplay="autoplay" loop>
                             <source src="https://giant.gfycat.com/BruisedWastefulBlackbear.webm" type="video/webm"/></video>
                             </a>
                         </div>
@@ -170,7 +170,7 @@
                     <div class="project-img">
                         <div class="project-image">
                             <a href="https://github.com/Ladbon/Birds" target="_blank" rel="noopener" aria-label="Github" class=""> <img src="../assets/img/bird.jpg" onmouseout="this.src='../assets/img/bird.jpg'" border="1" alt="" />
-                                <video id="project-video" preload="auto" autoplay loop muted>
+                                <video id="project-video" preload="auto" [muted]="true" autoplay="autoplay" loop>
                                 <source src="../assets/img/birdsgameplay.webm" type="video/webm"/></video>
                             </a>
                         </div>
@@ -188,7 +188,7 @@
                         <div class="project-image">
                             <a href="https://github.com/Ladbon/Lunchtime" target="_blank" rel="noopener" aria-label="Github" class=""> <img src="../assets/img/lunchtime.png" onmouseout="this.src='../assets/img/lunchtime.png'" border="1" alt="" />
 
-                                <video id="project-video" preload="auto" autoplay loop muted>
+                                <video id="project-video" preload="auto" [muted]="true" autoplay="autoplay" loop>
                                 <source src="https://giant.gfycat.com/InfantileFormalDwarfrabbit.webm" type="video/webm"/></video>
                             </a>
                         </div>
